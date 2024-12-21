@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICPC Team Homepage</title>
+  <style>
+    /* Basic styling for the dark theme */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      overflow-x: hidden;
+    }
+    
+    /* Styling for the header and team photo */
+    .header {
+      position: relative;
+      height: 100vh;
+      background-image: url('./img/team.jpg'); /* Replace with your team photo */
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: white;
+    }
+
+    .header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 2);
+    }
+
+
+    /* Button styling */
+    .button-container {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+
+    }
+
+    .button {
+      display: flex;
+      justify-content: center; /* Centers horizontally */
+      align-items: center; /* Centers vertically */
+      background-color: #ff5c8d;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-decoration: none; /* Remove underline from links */
+      text-align: center; /* Ensures the text aligns properly */
+    }
+
+    .button:hover {
+      background-color: #ff1f5c;
+      transform: translateY(-5px);
+    }
+
+    /* Styling for the questions section */
+    .questions-section {
+      padding: 50px 20px;
+      background-color: #1a1a1a;
+      text-align: center;
+    }
+
+    .questions-section h2 {
+      margin-bottom: 30px;
+    }
+
+    .question {
+      background-color: #2e2e2e;
+      border-radius: 10px;
+      padding: 15px 30px;
+      margin: 10px;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .question:hover {
+      background-color: #ff5c8d;
+      transform: translateY(-5px);
+    }
+
+    .question:active {
+      transform: translateY(2px);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      .button-container {
+        flex-direction: column;
+        gap: 10px;
+        bottom: 10px;
+      }
+
+      .button {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+
+      .questions-section {
+        padding: 30px 10px;
+      }
+
+      .question {
+        padding: 12px 25px;
+        font-size: 1rem;
+        margin: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 1.5rem;
+      }
+
+      .button {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+      }
+
+      .question {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section with Team Photo -->
+  <div class="header">
+    <h1>CTRL+ALT+<span style="color: red;">DEFEAT</span></h1>
+    <!-- <h2 class="responsive-subtitle">Hakim Sabzevari University's top team in the 25th ICPC West Asia Programming Competition, Tehran Site</h2> -->
+
+    <!-- Buttons under the team photo -->
+    <div class="button-container">
+      <a href="https://icpc.sharif.edu/2024/scoreboard/" class="button">scoreboard</a>
+      <a href="https://github.com/ctrl-alt-defeat-icpc" class="button">github</a>
+      <a href="https://ctrl-alt-defeat-icpc.github.io/gallery/" class="button">photos</a>
+      <a href="https://quera.org/course/add_to_course/course/19909/" class="button">quera class</a>
+      <a href="https://codeforces.com/team/176565" class="button">codeforces team</a>
+    </div>
+  </div>
+
+  <!-- Questions Section -->
+  <!-- <div class="questions-section">
+    <h2>Answer the Questions Below</h2>
+    <div class="question">What is ICPC?</div>
+    <div class="question">How can I participate?</div>
+    <div class="question">What are the requirements?</div>
+  </div> -->
+</body>
+</html>
